@@ -139,6 +139,9 @@ No! I want to make more advanced games and have other non game datasets related 
 7. #### I found an error within the code and want to fix it!
 PLEASE feel free to do so!
 
+8. #### Where are the Python Results stored?
+They are saved to the Downloads Folder as "TicTacToeTraining" and "DimensionalDomination".
+
 <br />
 
 ## How does Dimensional Domination Work?
