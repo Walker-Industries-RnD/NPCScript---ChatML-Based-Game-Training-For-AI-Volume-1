@@ -1,13 +1,13 @@
 
 # NPCScript - ChatML Based Game Training For AI: Volume 1
 
-NPCScript is a simple project focused on bringing text based gaming to AI! Built for the Replicant Project, these are an open source base for you to bring gaming into your own AI!
+###### NPCScript is a simple project focused on bringing text based gaming to AI! Built for the Replicant Project, these are an open source base for you to bring gaming into your own AI!*NPCScript is a simple project focused on bringing text based gaming to AI! Built for the Replicant Project, these are an open source base for you to bring gaming into your own AI!
 
-This project focuses on bringing two games into LLMs; Tic Tac Toe and a 3D game similar to connect 4 (Currently called Dimensional Dominance)!
+This project focuses on bringing two games into LLMs; Tic Tac Toe and a 3D game similar to connect 4 (Currently called Dimensional Dominance)!*
 
 Learn More About ChatML [here](https://huggingface.co/docs/transformers/main/en/chat_templating#what-are-generation-prompts)!
 
-
+<br />
 ## Features
 
 - Easily inject game capabilities into your chatbot
@@ -15,7 +15,7 @@ Learn More About ChatML [here](https://huggingface.co/docs/transformers/main/en/
 - Over 2k games within each, housing turn numbers in the hundred thou range
 - Includes Python Script Used To Generate Basis
 - Easy to understand, text based format which can be setup for 2D/3D usage
-
+<br />
 
 ## Demo 1: Tic Tac Toe
 
@@ -31,25 +31,30 @@ Learn More About ChatML [here](https://huggingface.co/docs/transformers/main/en/
     {'role': 'assistant', 'content': 'Player O placed at (1, 2)'},
     {'role': 'computer', 'content': 'Player O wins!'},
 
-## 3D Representation
+## Text Representation
 
 ### Setup Of Grid          
 
+```
 0  |  1  |  2         
 
 1  |  -  |  -           
 
 2  |  -  |  -           
 
+```
 
 ### Final Setup
 
+```
 X  |  O  |  X 
 
 X  |  O  |   
 
 O  |  O  |  X 
+```
 
+<br />
 
 ## Demo 2: Dimensional Domination
 
@@ -91,62 +96,66 @@ Note: This is similar to Connect 4. However, the grid is 3D and you can have a v
     {'role': 'user', 'content': 'Player X placed at (10, 8, 2)'},
     {'role': 'computer', 'content': 'Player X wins!'}
 
-### Explination Of Win
+### Explanation Of Win
 
-These all connect to create a sort of snake between different layers! 
+These all connect to create a sort of snake between different layers to the top right of the grid!
+
+<br />
+
 
 
 ## FAQ
 
 
-#### What is included here?
+1. #### What is included here?
 
 I included the code used to train the AI as well as the tracking for 2k wins!
 
-#### How do I use this with my LLM model?
+2. #### How do I use this with my LLM model?
 
 If your LLM supports ChatML, you simply can add it to your corpus! I highly reccomend adding a "System"
 
-#### How would this generally work?
+3. #### How would this generally work?
 
 You would initialize the game and on the user end create your own system to interact with it! For example, you could make a 3D game which takes the input of the user and sends it to the LLM as Player _ placed at (_, _, _)'}.
 
 The computer should be a third system, being a program that detects whenever someone wins and in the case of DD also gives the area.
 
-#### How does Dimensional Domination work?
+4. #### How does Dimensional Domination work?
 
 
 No! I want to make more advanced games and have other non game datasets related to Project Replicant i'll be sharing soon enough!
 
-#### Why make a 3D game in text isntead of Connect 4?
+5. #### Why make a 3D game in text isntead of Connect 4?
 
 I originally wanted to do Connect 4 due to it's simplicity but a few online searches showed that they were suing those who made similar games to theirs.
 
 With that in mind, I could not make a connect 4 database in the right mind while knowing developers might be in danger if they replicated the game. For that reason, DD is completely free and will NEVER have a patent on it.
 
-#### Will this be the last of the project?
+6. #### Will this be the last of the project?
 
 No! I want to make more advanced games and have other non game datasets related to Project Replicant i'll be sharing soon enough!
 
-#### I found an error within the code and want to fix it!
+7. #### I found an error within the code and want to fix it!
 PLEASE feel free to do so!
+
+<br />
+
 ## How does Dimensional Domination Work?
 
 Board Setup: The game randomly selects the dimensions of the board (rows, columns) and the depth (Z axis). For example, it might create a 6x6x6 or 8x8x8 board.
 
 Winning Condition: The game randomly selects a number (between 4 and 8) that represents the number of consecutive pieces needed to win. This means that a player must place their pieces in a straight line (horizontal, vertical, or diagonal) of this length to win the game.
-
+<br />
+<br />
 Gameplay:
-
-Players take turns placing their pieces on the board. 
-Each player places one piece per turn on an empty space in any part of the board.
-The game continues until one of the following conditions is met:
-
-One player achieves the winning condition
-The board is completely filled, resulting in a tie.
-
+1. Players take turns placing their pieces on the board. 
+2. Each player places one piece per turn on an empty space in any part of the board.
+3. The game continues until one of the following conditions is met:
+- One player achieves the winning condition
+- The board is completely filled, resulting in a tie.
+<br />
 Determining a Winner:
-
 The check_win function checks the board after each move to determine if the current player has achieved the winning condition. It checks for horizontal, vertical, and diagonal sequences of pieces as well as mixtures of them all!
 If a winning sequence is found for the current player, that player is declared the winner.
 If no player achieves the winning condition and the board is completely filled, the game ends in a tie.
