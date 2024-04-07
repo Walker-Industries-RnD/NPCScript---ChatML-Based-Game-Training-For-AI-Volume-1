@@ -67,7 +67,7 @@ def play_tic_tac_toe():
         game_number += 1
 
     # Save game history to a file
-    file_path = os.path.join(os.path.expanduser("~"), "Downloads", "TicTacToeTraining.txt")
+    file_path = os.path.join(os.path.expanduser("~"), "Documents", "TicTacToeTraining.txt")
     with open(file_path, "w") as f:
         for move in game_moves:
             if isinstance(move, dict):
