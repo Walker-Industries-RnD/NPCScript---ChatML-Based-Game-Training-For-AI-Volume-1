@@ -49,7 +49,7 @@ def play_game():
     ties = 0
 
     # Set the file path to save in Downloads directory
-    file_path = os.path.join(os.path.expanduser('~'), 'Downloads', 'game_moves.txt')
+    file_path = os.path.join(os.path.expanduser('~'), 'Documents', 'DimensionalDominationTraining.txt')
 
     with open(file_path, 'w') as file:
         game_number = 1
