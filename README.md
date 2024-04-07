@@ -141,7 +141,7 @@ No! I want to make more advanced games and have other non game datasets related 
 PLEASE feel free to do so!
 
 8. #### Where are the Python Results stored?
-They are saved to the Downloads Folder as "TicTacToeTraining" and "DimensionalDomination".
+They are saved to the Documents Folder as "TicTacToeTraining" and "DimensionalDomination", both are .txt files.
 
 <br />
 
