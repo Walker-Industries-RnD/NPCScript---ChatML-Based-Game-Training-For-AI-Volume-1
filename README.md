@@ -8,6 +8,7 @@ This project focuses on bringing two games into LLMs; Tic Tac Toe and a 3D game 
 Learn More About ChatML [here](https://huggingface.co/docs/transformers/main/en/chat_templating#what-are-generation-prompts)!
 
 <br />
+
 ## Features
 
 - Easily inject game capabilities into your chatbot
