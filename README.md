@@ -3,6 +3,11 @@
 
 ###### NPCScript is a simple project focused on bringing text based gaming to AI! Built for the Replicant Project, these are an open source base for you to bring gaming into your own AI!*NPCScript is a simple project focused on bringing text based gaming to AI! Built for the Replicant Project, these are an open source base for you to bring gaming into your own AI!
 
+
+
+[![Clause1](https://github.com/Walker-Industries-RnD/Malicious-Affiliation-Ban/blob/main/WIBan.png?raw=true)](https://github.com/Walker-Industries-RnD/Malicious-Affiliation-Ban/blob/main/README.md)
+
+
 This project focuses on bringing two games into LLMs; Tic Tac Toe and a 3D game similar to connect 4 (Currently called Dimensional Dominance)!*
 
 Learn More About ChatML [here](https://huggingface.co/docs/transformers/main/en/chat_templating#what-are-generation-prompts)!
